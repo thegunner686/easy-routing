@@ -13,12 +13,12 @@ export default class OpacityLink extends Link {
 
   componentDidMount() {
     let self = document.getElementsByClassName(this.id)[0];
-        self.style.webkitTransition = "0.1s all ease";
+        self.style.webkitTransition = "0.2s all ease";
         self.addEventListener("click", (e) => {
-          e.target.style.opacity = "0";
+          e.target.style.opacity = "0.1";
           setTimeout(() => {
             e.target.style.opacity = "1";
-          }, 100);
+          }, 200);
           RouteTo(this.props.to, this.props.in || "");
         });
   }
