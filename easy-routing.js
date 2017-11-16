@@ -8,4 +8,4 @@ let easy_routing = {
   IndexRoute
 };
 
-export default easy_routing;
+export easy_routing;
