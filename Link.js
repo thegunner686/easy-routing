@@ -20,10 +20,8 @@ export default class Link extends React.Component {
   }
 
   render() {
-    return (
-      <div className={this.id + " " + this.props.className}>
-        {this.props.children}
-      </div>
-    );
+    return React.createElement("div", {
+      "className" : this.id + " " + (this.props.className ? this.props.className : "")
+    }, this.props.children);
   }
 }

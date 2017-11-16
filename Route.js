@@ -39,10 +39,7 @@ export default class Route extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        {this.state.showing ? this.props.children : ""}
-      </div>
+    return React.createElement("div", null, this.state.showing ? this.props.children : "");
     );
   }
 }
