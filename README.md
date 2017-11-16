@@ -14,6 +14,16 @@ Use `<Routing.IndexRoute/>` to define a Route that will render its component ini
 
 Use `<Routing.Link/>` to define a link that will render the component inside the `<Routing.Route/>` with the corresponding path and family.
 
+#### Rules for family, path, to, in
+
+1. Routes are defined by a `path` and a `family`. These are both strings.
+2. A `path` should be unique to its family.
+3. Only one member of a `family` can be rendered at one time. 
+4. The `path` prop must be supplied or else there will be an error, but the `family` prop will default to `""` if not supplied, making it a global route.
+
+`to` and `in` act the same as `path` and `family` respectively, except these are the props supplied to the `<Link/>` instead of the `<Route/>`
+
+
 #### Example
 ```
   let React = require("react");
