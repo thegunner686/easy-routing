@@ -18,6 +18,8 @@ export default class ClassicLink extends Link {
   render() {
     return React.createElement("div", {
       "className" : this.id + " " + (this.props.className ? this.props.className : "")
-    }, React.createElement("a", null , this.props.children));
+    }, React.createElement("a", {
+      "href": "#" + this.id,
+    }, this.props.children));
   }
 }
