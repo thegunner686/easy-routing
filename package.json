@@ -1,0 +1,24 @@
+{
+  "name": "easy-routing",
+  "version": "1.0.0",
+  "description": "Easily create a navigable page with simple routing/rendering.",
+  "main": "easy-routing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegunner686/easy-routing.git"
+  },
+  "author": "Gunner Spencer <gunn686@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegunner686/easy-routing/issues"
+  },
+  "homepage": "https://github.com/thegunner686/easy-routing#readme",
+  "dependencies": {
+    "events": "^1.1.1",
+    "flux": "^3.1.3",
+    "react": "^16.1.1"
+  }
+}
