@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "./Link";
 
+import {
+  dispatcher as RouteDispatcher,
+  RouteTo
+} from "./RouteDispatcher";
+
 export default class ClassicLink extends Link {
   constructor() {
     super();
@@ -13,8 +18,6 @@ export default class ClassicLink extends Link {
   render() {
     return React.createElement("div", {
       "className" : this.id + " " + (this.props.className ? this.props.className : "")
-    }, React.createElement("a", {
-      "href" : this.id,
-    }, this.props.children));
+    }, React.createElement("a", null , this.props.children));
   }
 }
