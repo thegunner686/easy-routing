@@ -1,6 +1,6 @@
 {
   "name": "easy-routing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easily create a navigable page with simple routing/rendering.",
   "main": "easy-routing.js",
   "scripts": {
