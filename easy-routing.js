@@ -1,11 +1,9 @@
-import Link from "./Link";
-import Route from "./Route";
-import IndexRoute from "./IndexRoute";
+let Link = require("./Link").default,
+    Route = require("./Route").default,
+    IndexRoute = require("./IndexRoute").default;
 
-let easy_routing = {
+module.exports = {
   Link,
   Route,
-  IndexRoute
+  IndexRoute,
 };
-
-export easy_routing;
