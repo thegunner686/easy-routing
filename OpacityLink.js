@@ -15,10 +15,10 @@ export default class OpacityLink extends Link {
     let self = document.getElementsByClassName(this.id)[0];
         self.style.webkitTransition = "0.2s all ease";
         self.addEventListener("click", (e) => {
-          e.target.style.opacity = "0.1";
+          e.target.style.opacity = "0.3";
           setTimeout(() => {
             e.target.style.opacity = "1";
-          }, 200);
+          }, 300);
           RouteTo(this.props.to, this.props.in || "");
         });
   }
