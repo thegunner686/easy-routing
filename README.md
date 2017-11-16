@@ -15,7 +15,7 @@ Use `<Routing.IndexRoute/>` to define a Route that will render its component ini
 Use `<Routing.Link/>` to define a link that will render the component inside the `<Routing.Route/>` with the corresponding path and family.
 
 #### Example
-
+`
   let React = require("react");
   let Routing = require("easy-routing");
   
@@ -45,3 +45,4 @@ Use `<Routing.Link/>` to define a link that will render the component inside the
       );
     }
   }
+`
