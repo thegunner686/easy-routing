@@ -8,9 +8,9 @@ Easily create a navigable page with simple routing/rendering.
 
 `let Routing = require("easy-routing");`
 
-Use `<Routing.Route/>` to define a space where a component will be rendered when the path is called to by a `<Link/>`
+Use `<Routing.Route/>` to define a space where a component will be rendered when the path is called to by a `<Link>`
 
-Use `<Routing.IndexRoute/>` to define a Route that will render its component initially. (A regular Route will not render its component until called to by a `<Link/>`)
+Use `<Routing.IndexRoute/>` to define a Route that will render its component initially. (A regular Route will not render its component until called to by a `<Link>`)
 
 Use `<Routing.Link/>` to define a link that will render the component inside the `<Routing.Route/>` with the corresponding path and family.
 
@@ -22,6 +22,14 @@ Use `<Routing.Link/>` to define a link that will render the component inside the
 4. The `path` prop must be supplied or else there will be an error, but the `family` prop will default to `""` if not supplied, making it a global route.
 
 `to` and `in` act the same as `path` and `family` respectively, except these are the props supplied to the `<Link/>` instead of the `<Route/>`
+
+#### RouteTo
+'let {
+  RouteTo,
+  Route,
+} = require("easy-routing");'
+
+
 
 
 #### Example
