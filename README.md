@@ -24,10 +24,10 @@ Use `<Routing.Link/>` to define a link that will render the component inside the
 `to` and `in` act the same as `path` and `family` respectively, except these are the props supplied to the `<Link/>` instead of the `<Route/>`
 
 #### RouteTo
-'let {
+'''let {
   RouteTo,
   Route,
-} = require("easy-routing");'
+} = require("easy-routing");'''
 
 
 
