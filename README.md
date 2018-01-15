@@ -6,7 +6,7 @@ Easily create a navigable page with simple routing/rendering.
 
 ### Usage
 
-`''
+```
 let {
   Link,
   ClassicLink,
@@ -15,7 +15,7 @@ let {
   Route,
   RouteTo,
 } = require("easy-routing");
-'''
+```
 
 #### Rules for family, path, to, in
 
@@ -28,25 +28,25 @@ let {
 
 #### Link, ClassicLink, OpacityLink
 
-'''
+```
 <Link to="/About" in="MainPage" className="page-link" onClick={this.linkClicked.bind(this)}>
   About Page
 </Link>
-'''
+```
 
-Link provides no built-in styles, only the routing functionality. You can pass the 'className' to style the Link (rendered as a div with its children) and the 'onClick' prop to trigger a separate action when the Link is pressed, besides the normal routing.
+Link provides no built-in styles, only the routing functionality. You can pass the `className` to style the Link (rendered as a div with its children) and the `onClick` prop to trigger a separate action when the Link is pressed, besides the normal routing.
 
-ClassicLink does all that a Link does except it is rendered as an '<a>' tag to give the style and feel of a regular hyperlink.
+ClassicLink does all that a Link does except it is rendered as an `<a>` tag to give the style and feel of a regular hyperlink.
 
 OpacityLink does all that a Link does except it triggers a small ease opacity animation.
 
 #### Route, IndexRoute
 
-'''
+```
  <Route path="/About" family="MainPage">
   <AboutPage/>
  </Route>
-'''
+```
 
 The Route defines the space where the child components will only be rendered when routed to. The Route does not itself render an HTML element (like the Links do), but instead renders the children or nothing at all (depending on if it is visible).
 
@@ -54,9 +54,9 @@ IndexRoute works the same as the Route except it renders initially.
 
 #### RouteTo
 
-'RouteTo(path, family)'
+`RouteTo(path, family)`
 
-Use RouteTo to trigger the same action as when pressing a '<Link>'. This function allows you to construct your own program flow for routing instead of relying entirely on the built-in link components.
+Use RouteTo to trigger the same action as when pressing a `<Link>`. This function allows you to construct your own program flow for routing instead of relying entirely on the built-in link components.
 
 
 #### Example
